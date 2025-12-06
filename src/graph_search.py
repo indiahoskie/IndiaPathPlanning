@@ -5,7 +5,7 @@ from src.graph import Cell
 
 
 def depth_first_search(graph, start, goal):
-    """Depth First Search (DFS) algorithm. This algorithm is optional for P3.
+    """Depth First Search (DFS) algorithm. 
     Args:
         graph: The graph class.
         start: Start cell as a Cell object.
@@ -101,7 +101,7 @@ def breadth_first_search(graph, start, goal):
 
 
 def a_star_search(graph, start, goal):
-    """A* Search algorithm.
+    """A* Search algorithm. ***Chosen algorithm 
     Args:
         graph: The graph class.
         start: Start cell as a Cell object.
