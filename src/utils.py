@@ -2,7 +2,7 @@ import json
 from src.graph import Cell
 
 def trace_path(cell, graph):
-    """Traces a path from the given cell through its parents."""
+    
     path = []
     while cell is not None:
         path.append(Cell(cell.i, cell.j))
@@ -14,8 +14,6 @@ def trace_path(cell, graph):
 
 def generate_plan_file(graph, start, goal, path, algo="", out_name="out.planner"):
     """Generates the planner file for visualization in the navigation web app.
-
-    The app can be found at: hellorob.org/nav-app
     """
     print(f"Saving planning data to file: {out_name}")
 
@@ -26,7 +24,7 @@ def generate_plan_file(graph, start, goal, path, algo="", out_name="out.planner"
         "path": path_data,
         "visited_cells": visited_cells_data,
         "dt": [],
-        "map": graph.as_string(),  # assuming mapAsString(graph) is equivalent to self.map_as_string()
+        "map": graph.as_string(),  
         "start": [start.i, start.j],
         "goal": [goal.i, goal.j],
         "planning_algo": algo
