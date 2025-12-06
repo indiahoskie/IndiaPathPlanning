@@ -9,13 +9,13 @@ class Cell(object):
 
 
 class GridGraph:
-    """Helper class to represent an occupancy grid map as a graph."""
+    
     def __init__(self, file_path=None, width=-1, height=-1, origin=(0, 0),
                  meters_per_cell=0, cell_odds=None, collision_radius=0.15, threshold=-100):
         """Constructor for the GridGraph class.
 
         Args:
-            file_path: Path to the map file to load. If provided, all other map
+            file_path: Path to the map file to load. all other map
                        properties are loaded from this file.
             width: Map width in cells.
             height: Map height in cells.
